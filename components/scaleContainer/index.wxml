@@ -1,0 +1,9 @@
+<!--components/scaleContainer/index.wxml-->
+<view class="pages custom-canteen-manage-scale">
+  <view bindtouchstart="monitorTouchStart" bindtouchmove="monitorTouchMove" bindtouchend="monitorTouchEnd" class="inner-page">
+    <view
+      style="{{'transform-origin: 0 0 0; transform: translate('+translateX+'px, '+translateY+'px) scale('+scale+');'}}">
+      <slot></slot>
+    </view>
+  </view>
+</view>
